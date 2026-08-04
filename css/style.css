@@ -266,7 +266,6 @@ p {
     gap: 70px;
 }
 
-/* estilo da imagem do produto */
 .produto-img {
     width: 500px;
     height: 500px;
@@ -282,6 +281,70 @@ p {
     height: 90%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+/* estilo da imagem do produto */
+.produto-img1 {
+    width: 500px;
+    background: #ec6f8e;
+    border-radius: 25px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.produto-img1 #imagemPrincipal {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 15px;
+    background: white;
+    transition: .3s;
+}
+
+.produto-img1 #imagemPrincipal:hover {
+    transform: scale(1.02);
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.imagens {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    flex: 1;
+    scrollbar-width: none;
+}
+
+.imagens::-webkit-scrollbar {
+    display: none;
+}
+
+.imagens img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: .3s;
+}
+
+.imagens img:hover {
+    transform: scale(1.05);
+    border-color: #f8a9b9;
+}
+
+.imagens img.ativa {
+    border-color: white;
 }
 
 /* estilo das informações do produto */
@@ -318,9 +381,9 @@ p {
 /* estilo do botão de pedir pelo WhatsApp */
 .btn-whatsapp {
     display: inline-block;
-    width: 110%;
+    width: 80%;
     text-align: center;
-    padding: 18px;
+    padding: 13px;
     border-radius: 40px;
     background: #f8a9b9;
     color: #fff;
@@ -337,9 +400,11 @@ p {
     0% {
         box-shadow: 0 0 0 0 rgba(248, 169, 185, .6);
     }
+
     70% {
         box-shadow: 0 0 0 18px rgba(248, 169, 185, 0);
     }
+
     100% {
         box-shadow: 0 0 0 0 rgba(248, 169, 185, 0);
     }
@@ -410,14 +475,17 @@ p {
     .card-produto {
         width: 320px;
     }
+
     .produto-detalhe {
         flex-direction: column;
         text-align: center;
         gap: 40px;
     }
+
     .produto-info p {
         text-align: center;
     }
+
     .btn-whatsapp {
         width: 100%;
     }
@@ -428,87 +496,123 @@ p {
     .header {
         height: 80px;
     }
+
     .navbar {
         padding: 0 20px;
         height: 80px;
     }
+
     .logo img {
         height: 90px;
     }
+
     .nav-link {
         font-size: 1rem;
     }
+
     .hero-store {
         height: 350px;
         justify-content: center;
         text-align: center;
         padding: 20px;
     }
+
     .hero-content h1 {
         font-size: 42px;
     }
+
     .hero-content p {
         font-size: 16px;
     }
+
     p {
         font-size: 30px;
-        padding: 20px;
+        padding: 5px;
         margin-top: 20px;
     }
+
     .produtos {
         padding: 40px 20px;
         gap: 35px;
     }
+
     .card-produto {
         width: 100%;
         max-width: 350px;
     }
+
     .card-produto img {
         height: 280px;
     }
+
     .botoes {
         flex-direction: column;
     }
+
     .btn {
         font-size: 14px;
         padding: 14px;
     }
-    .produto-detalhe {
-        flex-direction: column;
-        margin: 100px auto;
-        padding: 20px;
-    }
+
     .produto-img {
         width: 100%;
         max-width: 350px;
         height: 350px;
     }
+
+    .produto-detalhe {
+        flex-direction: column;
+        margin: 100px auto;
+        padding: 20px;
+    }
+
+    .produto-img1 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .produto-img1 #imagemPrincipal {
+        height: 300px;
+    }
+
+    .imagens img {
+        width: 65px;
+        height: 65px;
+    }
+
     .produto-info {
         text-align: center;
     }
+
     .produto-info h1 {
         font-size: 42px;
         margin-bottom: 15px;
     }
+
     .produto-info p {
         text-align: center;
         font-size: 16px;
         margin-bottom: 8px;
     }
+
     .produto-info h2 {
         font-size: 48px;
     }
+
     .btn-whatsapp {
         width: 100%;
         font-size: 20px;
         padding: 15px;
     }
+
     .footer {
         padding: 15px 15px;
     }
+
     .footer-social {
         margin-bottom: -20px;
     }
+
     .footer p {
         font-size: 12px;
         line-height: 1.5;
