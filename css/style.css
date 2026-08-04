@@ -527,7 +527,7 @@ p {
 
     p {
         font-size: 30px;
-        padding: 5px;
+        padding: 0px;
         margin-top: 20px;
     }
 
@@ -561,9 +561,15 @@ p {
     }
 
     .produto-detalhe {
+        display: flex;
         flex-direction: column;
-        margin: 100px auto;
-        padding: 20px;
+        align-items: center;
+        gap: 20px;
+        margin: 70px auto;
+        padding: 25px 20px;
+        width: 90%;
+        background: #fff;
+        border-radius: 25px;
     }
 
     .produto-img1 {
@@ -581,28 +587,42 @@ p {
     }
 
     .produto-info {
+        width: 100%;
         text-align: center;
     }
+
 
     .produto-info h1 {
-        font-size: 42px;
-        margin-bottom: 15px;
+        font-size: 30px;
+        margin: 5px 0 20px;
+        font-family: 'Caveat', cursive;
     }
 
+
     .produto-info p {
-        text-align: center;
         font-size: 16px;
-        margin-bottom: 8px;
+        margin: 8px 0;
+        color: #e86b8b;
     }
 
     .produto-info h2 {
-        font-size: 48px;
+        font-size: 38px;
+        margin: 25px 0;
+        font-weight: 700;
+        color: #e86b8b;
     }
 
+
     .btn-whatsapp {
-        width: 100%;
-        font-size: 20px;
-        padding: 15px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        max-width: 300px;
+        height: 55px;
+        border-radius: 40px;
+        font-size: 17px;
+        font-weight: 600;
     }
 
     .footer {
